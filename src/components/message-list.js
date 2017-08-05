@@ -11,7 +11,7 @@ class MessageList extends Component {
   renderList() {
     return _.map(this.props.messages, (value, key) => {
       return (
-        <li key={key}>Message from {value.sender}: "{value.message_text}"</li>
+        <li key={key}>Message to {value.recipient}: "{value.message_text}" from: {value.sender}</li>
       );
     });
   }

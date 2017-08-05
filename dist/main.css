@@ -1,25 +1,3 @@
-html {
-  height: 100%;
-  font-family: sans-serif;
-  background-color: #333333;
-  color: gray;
-}
-
 body {
-  height: 100%;
-}
-
-#AppDiv {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#root {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0px;
 }
