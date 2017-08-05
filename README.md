@@ -1,13 +1,6 @@
-# My-React-Firebase-Starter
+# chatMagic
 
-This starter has a setup for:
+This app is based on my-react-firebase-starter
 
-webpack
-webpack-dev-server
-react
-react-dom
-react-router
-babel (es2015 + react)
-eslint (rally-coding + with some global exclusions)
-firebase
-styled-components
+it uses React and Firebase
+it is a chat app for hotelMagic which will eventually be built for web, desktop and mobile
