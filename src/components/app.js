@@ -9,6 +9,7 @@ import NewMessage from './new_message';
 const Div = styled.div`
   height: 100vh;
   font-family: sans-serif;
+  font-size: 12px;
   background-color: #333333;
   color: gray;
   display: grid;
@@ -47,12 +48,24 @@ class App extends Component {
     ReceivedMessages.push(messagetxt);
   }
 
+  chooseRecipient(username) {
+    this.setState({ recipient: username });
+  }
+
   render() {
     return (
       <Div id="AppDiv">
-        <ContactList contacts={this.state.data.contacts}/>
-        <MessageList messages={this.state.data.messages} />
-        <NewMessage title="hello" addMessageFunction={this.addMessage.bind(this)} />
+        <ContactList
+          contacts={this.state.data.contacts}
+          choooseRecipientF={this.chooseRecipient.bind(this)}
+        />
+        <MessageList
+          messages={this.state.data.messages}
+          user={this.state.loggedInUser}
+        />
+        <NewMessage
+          addMessageFunction={this.addMessage.bind(this)}
+        />
       </Div>
 
     );

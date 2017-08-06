@@ -7,7 +7,9 @@ const Div = styled.div`
 `;
 
 const Input = styled.input`
-  width: 100vw;
+  width: 95vw;
+  height: 30px;
+  font-size: 24px;
 `;
 
 class NewMessage extends Component {

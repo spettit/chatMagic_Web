@@ -16,7 +16,7 @@ class ContactList extends Component {
   renderList() {
        return _.map(this.props.contacts, (value, key) => {
         return (
-          <li key={key}>{value.user_name}</li>
+          <li key={key} onClick={() => this.props.choooseRecipientF(value.user_name)}>{value.user_name}</li>
         );
       });
   }
